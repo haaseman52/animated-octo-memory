@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock - Multiple Time Zones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>World Clock</h1>
+        <p class="subtitle">Current time in different time zones</p>
+        
+        <div class="controls">
+            <input 
+                type="text" 
+                id="timezoneInput" 
+                placeholder="Enter timezone (e.g., America/New_York, Europe/London, Asia/Tokyo)"
+                class="input-field"
+            >
+            <button id="addBtn" class="btn btn-add">Add Timezone</button>
+        </div>
+
+        <div class="clocks-container" id="clocksContainer">
+            <!-- Clocks will be dynamically added here -->
+        </div>
+
+        <div class="default-timezones">
+            <h3>Quick Add:</h3>
+            <div class="quick-add-buttons">
+                <button class="btn btn-quick" data-tz="America/New_York">New York</button>
+                <button class="btn btn-quick" data-tz="Europe/London">London</button>
+                <button class="btn btn-quick" data-tz="Europe/Paris">Paris</button>
+                <button class="btn btn-quick" data-tz="Asia/Tokyo">Tokyo</button>
+                <button class="btn btn-quick" data-tz="Asia/Shanghai">Shanghai</button>
+                <button class="btn btn-quick" data-tz="Australia/Sydney">Sydney</button>
+                <button class="btn btn-quick" data-tz="Asia/Dubai">Dubai</button>
+                <button class="btn btn-quick" data-tz="Asia/Singapore">Singapore</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
